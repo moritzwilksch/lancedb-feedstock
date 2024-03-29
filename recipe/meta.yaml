@@ -12,16 +12,17 @@ source:
 build:
   entry_points:
     - lancedb = lancedb.cli.cli:cli
-  script: {{ PYTHON }} -m pip install ./python -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
-  host:
+  build:
     - {{ compiler('rust') }}
     - {{ compiler('c') }}
-    - python
-    - pkg-config
+    - cargo-bundle-licenses
+    - pkgconfig
     - protobuf
+  host:
+    - python
     - setuptools
     - pip
     - maturin
@@ -52,7 +53,7 @@ test:
 about:
   home: https://github.com/lancedb/lancedb
   summary: Developer-friendly, serverless vector database for AI applications
-  license: Apache-2.0
+  license: Apache
   license_file: LICENSE
 
 extra:
