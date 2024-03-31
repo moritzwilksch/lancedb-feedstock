@@ -24,6 +24,7 @@ requirements:
     - protobuf
   host:
     - python
+    - openssl
     - setuptools
     - pip
     - maturin
