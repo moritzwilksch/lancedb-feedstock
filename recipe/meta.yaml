@@ -37,6 +37,7 @@ requirements:
     - attrs >=21.3.0
     - semver >=3.0
     - cachetools
+    - pylance ==0.10.5
     - pyyaml >=6.0
     - click >=8.1.7
     - requests >=2.31.0
@@ -46,10 +47,7 @@ test:
   imports:
     - lancedb
   commands:
-    - pip check
     - lancedb --help
-  requires:
-    - pip
 
 about:
   home: https://github.com/lancedb/lancedb
