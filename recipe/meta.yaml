@@ -28,6 +28,7 @@ requirements:
     - pip
     - maturin
   run:
+    - python
     - deprecation
     - numpy
     - pyarrow
