@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -ex
+export OPENSSL_DIR=$PREFIX
 
 # Bundle all library licenses
 cargo-bundle-licenses \
