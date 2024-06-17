@@ -11,22 +11,23 @@ source:
 
 build:
   number: 0
+  skip: True  # [py<39]
 
 requirements:
   build:
     - {{ compiler('rust') }}
-    # - {{ stdlib('c') }}
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - cargo-bundle-licenses
     - pkg-config
     - protobuf
   host:
-    - python >=3.9
+    - python
     - openssl
     - pip
     - maturin >=1.4
   run:
-    - python >=3.9
+    - python
     - deprecation
     - pylance ==0.12.1
     - requests >=2.31.0
