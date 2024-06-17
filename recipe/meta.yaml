@@ -38,7 +38,7 @@ requirements:
     - packaging
     - cachetools
     - overrides >=0.7
-  run_constraints:
+  run_constrained:
     # https://github.com/lancedb/lancedb/pull/37/files
     - ratelimiter >=1.0,<2
 
