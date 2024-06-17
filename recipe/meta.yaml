@@ -21,6 +21,7 @@ requirements:
     - {{ compiler('c') }}
     - cargo-bundle-licenses
     - pkg-config
+    - protobuf
   host:
     - python
     - openssl
