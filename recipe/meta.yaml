@@ -19,7 +19,7 @@ requirements:
     - {{ compiler('rust') }}
     - {{ compiler('c') }}
     - cargo-bundle-licenses
-    - pkgconfig
+    - pkg-config
     - protobuf
   host:
     - python
