@@ -1,5 +1,5 @@
 {% set name = "lancedb" %}
-{% set version = "0.6.5" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
