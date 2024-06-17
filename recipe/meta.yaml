@@ -17,7 +17,7 @@ build:
 requirements:
   build:
     - {{ compiler('rust') }}
-    - {{ stdlib('c') }}
+    # - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - cargo-bundle-licenses
     - pkg-config
@@ -38,6 +38,9 @@ requirements:
     - packaging
     - cachetools
     - overrides >=0.7
+    # not in pyproject.toml but in source
+    - pyarrow
+    - pyyaml
   run_constrained:
     # https://github.com/lancedb/lancedb/pull/37/files
     - ratelimiter >=1.0,<2
