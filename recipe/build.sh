@@ -8,9 +8,11 @@ cargo-bundle-licenses \
   --format yaml \
   --output ${SRC_DIR}/THIRDPARTY.yml
 
-maturin build --manifest-path python/Cargo.toml --release -i $PYTHON
+$PYTHON -m pip install --no-deps --ignore-installed python
 
-cd target/wheels
+# maturin build --manifest-path python/Cargo.toml --release -i $PYTHON
 
-# Install wheel manually
-$PYTHON -m pip install *.whl
+# cd target/wheels
+
+# # Install wheel manually
+# $PYTHON -m pip install *.whl
