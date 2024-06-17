@@ -10,8 +10,6 @@ source:
   sha256: dfa9dea132b5d3a55b24526622bd39d099acca4cba482ead021e95ff007a7b12
 
 build:
-  entry_points:
-    - lancedb = lancedb.cli.cli:cli
   number: 0
 
 requirements:
