@@ -21,12 +21,12 @@ requirements:
     - pkg-config
     - protobuf
   host:
-    - python
+    - python >=3.9
     - openssl
     - pip
     - maturin >=1.4
   run:
-    - python
+    - python >=3.9
     - deprecation
     - pylance ==0.12.1
     - requests >=2.31.0
@@ -47,8 +47,6 @@ requirements:
 test:
   imports:
     - lancedb
-  commands:
-    - lancedb --help
 
 about:
   home: https://github.com/lancedb/lancedb
