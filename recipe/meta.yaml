@@ -20,28 +20,23 @@ requirements:
     - {{ compiler('c') }}
     - cargo-bundle-licenses
     - pkg-config
-    - protobuf
   host:
     - python
     - openssl
-    - setuptools
     - pip
-    - maturin
+    - maturin >=1.4
   run:
     - python
     - deprecation
-    - numpy
-    - pyarrow
+    - pylance ==0.12.1
+    - ratelimiter >=1.0,<2
+    - requests >=2.31.0
     - retry >=0.9.2
     - tqdm >=4.27.0
-    - pydantic >=1.10
+    - pydantic >=1.10,<3
     - attrs >=21.3.0
-    - semver >=3.0
+    - packaging
     - cachetools
-    - pylance ==0.10.5
-    - pyyaml >=6.0
-    - click >=8.1.7
-    - requests >=2.31.0
     - overrides >=0.7
 
 test:
