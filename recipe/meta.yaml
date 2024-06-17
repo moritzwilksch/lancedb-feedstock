@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lancedb/{{ name }}/archive/refs/tags/python-v{{ version }}.tar.gz
-  sha256: 09744899db55bc4a9c3065a33f5065554f657525ec5a1affbbe47b485ef14680
+  sha256: dfa9dea132b5d3a55b24526622bd39d099acca4cba482ead021e95ff007a7b12
 
 build:
   entry_points:
