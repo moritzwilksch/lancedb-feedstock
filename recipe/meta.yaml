@@ -12,11 +12,15 @@ source:
 build:
   entry_points:
     - lancedb = lancedb.cli.cli:cli
-  noarch: python
   script: cd python; {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
+  build:
+    - {{ compiler("c") }}
+    - {{ stdlib("c") }}
+    - {{ compiler("rust") }}
+    - cargo-bundle-licenses
   host:
     - python >=3.8
     - maturin >=1.4
