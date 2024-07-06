@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/lancedb/lancedb/archive/v{{ version }}.tar.gz
+  url: https://github.com/lancedb/lancedb/archive/python-v{{ version }}.tar.gz
   sha256: 97d5d6f3066bde99ec636e1f3f422cacf3fd383a363a55849adaf4a004d4ea76
 
 build:
