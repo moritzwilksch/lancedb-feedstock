@@ -22,11 +22,11 @@ requirements:
     - {{ compiler("rust") }}
     - cargo-bundle-licenses
   host:
-    - python >=3.8
+    - python
     - maturin >=1.4
     - pip
   run:
-    - python >=3.8
+    - python
     - deprecation
     - pylance ==0.13.0
     - ratelimiter >=1.0,<2.dev0
