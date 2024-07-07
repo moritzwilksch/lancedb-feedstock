@@ -1,0 +1,21 @@
+From c876ac833829119c20bd095ef1befdf5ff57e951 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Sun, 7 Jul 2024 06:27:51 +0200
+Subject: [PATCH] Update pyproject.toml
+
+---
+ python/pyproject.toml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/python/pyproject.toml b/python/pyproject.toml
+index ad95a6d00..23b9d501f 100644
+--- a/python/pyproject.toml
++++ b/python/pyproject.toml
+@@ -4,7 +4,6 @@ name = "lancedb"
+ dependencies = [
+     "deprecation",
+     "pylance==0.14.0",
+-    "ratelimiter~=1.0",
+     "requests>=2.31.0",
+     "retry>=0.9.2",
+     "tqdm>=4.27.0",
