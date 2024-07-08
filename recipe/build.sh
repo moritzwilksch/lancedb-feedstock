@@ -8,7 +8,7 @@ cargo-bundle-licenses \
   --format yaml \
   --output ${SRC_DIR}/THIRDPARTY.yml
 
-$PYTHON -m pip install --no-deps --ignore-installed ./python
+$PYTHON -m pip install --no-deps --ignore-installed ./python -vvv
 
 # maturin build --manifest-path python/Cargo.toml --release -i $PYTHON
 
