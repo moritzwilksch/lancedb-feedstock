@@ -14,7 +14,7 @@ source:
 build:
   script: cd python; {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-  skip: true  # [py<=38 or win]
+  skip: true  # [py<=38]
 
 requirements:
   build:
