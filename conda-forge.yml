@@ -14,3 +14,7 @@ azure:
   free_disk_space: true
   settings_linux:
     swapfile_size: 15GiB
+  settings_win:
+    variables:
+      CONDA_BLD_PATH: C:\\bld\\  # <- potentially not necessary, but C: tends to have more space (~70 GB) available
+      SET_PAGEFILE: "True"
