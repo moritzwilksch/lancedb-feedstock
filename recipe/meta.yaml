@@ -33,7 +33,7 @@ requirements:
   run:
     - python
     - deprecation
-    - pylance ==0.13.0
+    - pylance ==0.14.1
     # ratelimiter package doesn't work on 3.11
     # https://github.com/lancedb/lancedb/blob/main/python/python/tests/test_embeddings.py#L39
     - ratelimiter >=1.0,<2.dev0  # [py<311]
