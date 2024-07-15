@@ -8,6 +8,7 @@ azure:
       SET_PAGEFILE: 'True'
 bot:
   automerge: true
+  inspection: update-grayskull
 build_platform:
   linux_aarch64: linux_64
   osx_arm64: osx_64
