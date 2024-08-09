@@ -14,7 +14,7 @@ index ad95a6d00..23b9d501f 100644
 @@ -4,7 +4,6 @@ name = "lancedb"
  dependencies = [
      "deprecation",
-     "pylance==0.15.0",
+     "pylance==0.16.0",
 -    "ratelimiter~=1.0",
      "requests>=2.31.0",
      "retry>=0.9.2",
